@@ -7,17 +7,17 @@
 <header>
 	<nav>
 		<ul>
-			<li class:active={$page.path === '/'}>
+			<li class:active={$page.url.pathname === '/'}>
 				<a sveltekit:prefetch href="/" aria-label={$_('header.home')} title={$_('header.home')}
 					><div class="icon"><IoIosHome /></div></a
 				>
 			</li>
-			<li class:active={$page.path == '/snippets' || $page.path.includes('/snippets/')}>
+			<li class:active={$page.url.pathname == '/snippets' || $page.url.pathname.includes('/snippets/')}>
 				<a sveltekit:prefetch href="/snippets" title={$_('header.snippets')}
 					>{$_('header.snippets')}</a
 				>
 			</li>
-			<li class:active={$page.path === '/imprint'}>
+			<li class:active={$page.url.pathname === '/imprint'}>
 				<a sveltekit:prefetch href="/imprint" title={$_('header.imprint')}>{$_('header.imprint')}</a
 				>
 			</li>
