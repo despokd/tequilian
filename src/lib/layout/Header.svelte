@@ -12,11 +12,11 @@
 					><div class="icon"><IoIosHome /></div></a
 				>
 			</li>
-			<li class:active={$page.url.pathname == '/snippets' || $page.url.pathname.includes('/snippets/')}>
+			<!-- <li class:active={$page.url.pathname == '/snippets' || $page.url.pathname.includes('/snippets/')}>
 				<a sveltekit:prefetch href="/snippets" title={$_('header.snippets')}
 					>{$_('header.snippets')}</a
 				>
-			</li>
+			</li> -->
 			<li class:active={$page.url.pathname === '/imprint'}>
 				<a sveltekit:prefetch href="/imprint" title={$_('header.imprint')}>{$_('header.imprint')}</a
 				>
