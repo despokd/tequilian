@@ -56,6 +56,7 @@
 
 		a {
 			text-decoration: none;
+
 			&:focus-visible {
 				outline: 2px solid black;
 				color: black;
@@ -65,5 +66,9 @@
 				}
 			}
 		}
+	}
+
+	.icon {
+		height: 1em;
 	}
 </style>
