@@ -9,5 +9,7 @@
 </svelte:head>
 
 <div class="content">
-	<h1>Tequilian</h1>
+	<div class="container">
+		<h1>Tequilian</h1>
+	</div>
 </div>

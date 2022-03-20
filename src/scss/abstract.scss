@@ -1,0 +1,20 @@
+/**
+ * Abstract
+ */
+
+/*
+ * Select all headings
+ * @link https://dev.to/nirlanka/h1-h2-all-through-scss-functions-4049
+ */
+@function headings($before: '', $from: 1, $to: 6, $after: '') {
+	@if $from == $to {
+		@return '#{$before} h#{$from}#{$after}, #{$before} .h#{$from}#{$after}';
+	} @else {
+		@return '#{$before} h#{$from}#{$after}, #{$before} .h#{$from}#{$after}, '+headings(
+				$before,
+				$from + 1,
+				$to,
+				$after
+			);
+	}
+}

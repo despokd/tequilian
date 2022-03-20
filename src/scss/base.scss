@@ -1,0 +1,19 @@
+/**
+ * Global
+ */
+html {
+	scroll-behavior: smooth;
+	scroll-margin-top: 20vh;
+	overscroll-behavior: none;
+}
+
+/**
+ * Typo
+ */
+body {
+	font-family: $font-family-body;
+}
+
+#{headings()} {
+	font-family: $font-family-heading;
+}
