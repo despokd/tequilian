@@ -1,0 +1,36 @@
+/**
+ * Quick dark mode for dev preview
+ */
+
+body {
+	@media (prefers-color-scheme: dark) {
+		background-color: #1a1a1a;
+		color: #fff;
+	}
+}
+
+a {
+	@media (prefers-color-scheme: dark) {
+		color: lightblue;
+		&:hover {
+			color: blue;
+		}
+		&:visited {
+			color: violet;
+		}
+	}
+}
+
+img,
+picture,
+video,
+audio,
+canvas,
+svg,
+iframe,
+embed,
+object {
+	@media (prefers-color-scheme: dark) {
+		opacity: 0.75;
+	}
+}
