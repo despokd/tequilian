@@ -15,6 +15,9 @@
 	<Hamburger />
 	<nav class={showMainNavValue ? 'show' : ''}>
 		<ul>
+			<li class:active={$page.url.pathname == '/links' || $page.url.pathname.includes('/links/')}>
+				<a sveltekit:prefetch href="/links" title={$_('header.links')}>{$_('header.links')}</a>
+			</li>
 			<li
 				class:active={$page.url.pathname == '/snippets' ||
 					$page.url.pathname.includes('/snippets/')}

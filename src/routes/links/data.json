@@ -1,0 +1,91 @@
+[
+    {
+        "url": "https://unsplash.com",
+        "category": "image"
+    },
+    {
+        "url": "https://www.pexels.com",
+        "category": "image"
+    },
+    {
+        "url": "https://pixabay.com",
+        "category": "image"
+    },
+    {
+        "url": "https://pixeltrue.com/free-illustrations",
+        "category": "image"
+    },
+    {
+        "url": "https://lottiefiles.com",
+        "category": "image"
+    },
+    {
+        "url": "https://picsum.photos",
+        "category": "image",
+        "favorite": true
+    },
+    {
+        "url": "https://myfonts.com/WhatTheFont",
+        "category": "fonts-icons"
+    },
+    {
+        "url": "https://alternatype.net",
+        "category": "fonts-icons"
+    },
+    {
+        "url": "https://v-fonts.com",
+        "category": "fonts-icons"
+    },
+    {
+        "url": "https://bennettfeely.com/ztext",
+        "category": "fonts-icons"
+    },
+    {
+        "url": "https://fontofweb.now.sh",
+        "category": "fonts-icons"
+    },
+    {
+        "url": "https://www.gradientmagic.com/",
+        "category": "colors"
+    },
+    {
+        "url": "http://tympanus.net/Development/AmbientCanvasBackgrounds/index2.html",
+        "category": "colors"
+    },
+    {
+        "url": "https://coolors.co",
+        "category": "colors"
+    },
+    {
+        "url": "https://cssgradient.io",
+        "category": "colors"
+    },
+    {
+        "url": "http://hexcolorblender.now.sh",
+        "category": "colors"
+    },
+    {
+        "url": "http://toolbar.netcraft.com/site_report",
+        "category": "tools"
+    },
+    {
+        "url": "http://entwicklertools.de/tools/bild-tools/seitenverhaeltnis-aspect-ratio",
+        "category": "tools"
+    },
+    {
+        "url": "http://regexpal.com/",
+        "category": "tools"
+    },
+    {
+        "url": "https://www.epochconverter.com/",
+        "category": "tools"
+    },
+    {
+        "url": "https://designtoasty.de/",
+        "favorite": true
+    },
+    {
+        "url": "https://patrikphan.de/",
+        "favorite": true
+    }
+]

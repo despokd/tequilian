@@ -9,6 +9,7 @@ function setupI18n() {
 				snippets: 'Snippets',
 				imprint: 'Imprint',
 				aboutMe: 'About me',
+				links: 'Links'
 			},
 			footer: {
 				aboutMe: 'About me',
@@ -18,6 +19,9 @@ function setupI18n() {
 			},
 			snippets: {
 				title: 'Snippets'
+			},
+			links: {
+				title: 'Links'
 			},
 			imprint: {
 				title: 'Imprint'
@@ -29,7 +33,8 @@ function setupI18n() {
 				home: 'Start',
 				snippets: 'Snippets',
 				imprint: 'Impressum',
-				aboutMe: 'Über mich'
+				aboutMe: 'Über mich',
+				links: 'Links'
 			},
 			footer: {
 				aboutMe: 'Über mich',
@@ -39,6 +44,9 @@ function setupI18n() {
 			},
 			snippets: {
 				title: 'Snippets'
+			},
+			links: {
+				title: 'Links'
 			},
 			imprint: {
 				title: 'Impressum'
