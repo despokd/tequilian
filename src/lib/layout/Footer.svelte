@@ -1,5 +1,12 @@
+<script>
+	import { _ } from '$lib/i18n';
+</script>
+
 <footer>
-	&copy; {new Date().getFullYear()} Kilian Domaratius
+	&copy; {new Date().getFullYear()}
+	<a href="//kdomaratius.de" rel="noreferrer" target="_blank" title={$_('footer.aboutMe')}
+		>Kilian Domaratius</a
+	>
 </footer>
 
 <style lang="scss">

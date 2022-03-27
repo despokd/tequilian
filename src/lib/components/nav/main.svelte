@@ -26,6 +26,14 @@
 				<a sveltekit:prefetch href="/imprint" title={$_('header.imprint')}>{$_('header.imprint')}</a
 				>
 			</li>
+			<li>
+				<a
+					href="https://kdomaratius.de"
+					target="_blank"
+					rel="noreferrer"
+					title={$_('header.aboutMe')}>{$_('header.aboutMe')}</a
+				>
+			</li>
 		</ul>
 	</nav>
 </div>

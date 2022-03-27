@@ -7,7 +7,11 @@ function setupI18n() {
 			header: {
 				home: 'Home',
 				snippets: 'Snippets',
-				imprint: 'Imprint'
+				imprint: 'Imprint',
+				aboutMe: 'About me',
+			},
+			footer: {
+				aboutMe: 'About me',
 			},
 			home: {
 				title: 'Home'
@@ -24,7 +28,11 @@ function setupI18n() {
 			header: {
 				home: 'Start',
 				snippets: 'Snippets',
-				imprint: 'Impressum'
+				imprint: 'Impressum',
+				aboutMe: 'Über mich'
+			},
+			footer: {
+				aboutMe: 'Über mich',
 			},
 			home: {
 				title: 'Home'
