@@ -1,0 +1,69 @@
+/* Margin */
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mr-auto {
+	margin-right: auto;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+/* Padding */
+.p-0 {
+	padding: 0;
+}
+
+/* Width */
+.w-100 {
+	width: 100%;
+}
+
+.w-0 {
+	width: 0;
+}
+
+/* Height */
+.h-100 {
+	height: 100%;
+}
+
+.h-0 {
+	height: 0;
+}
+
+/* Display */
+.d-none {
+	display: none;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-grid {
+	display: grid;
+}
+
+.d-inline {
+	display: inline;
+}
+
+.d-inline-block {
+	display: inline-block;
+}
+
+.d-inline-flex {
+	display: inline-flex;
+}
