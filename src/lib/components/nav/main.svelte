@@ -16,9 +16,10 @@
 	<nav class={showMainNavValue ? 'show' : ''}>
 		<ul>
 			<li
-				class:active={$page.url.pathname == '/snippet' || $page.url.pathname.includes('/snippet/')}
+				class:active={$page.url.pathname == '/snippets' ||
+					$page.url.pathname.includes('/snippets/')}
 			>
-				<a sveltekit:prefetch href="/snippet" title={$_('header.snippets')}
+				<a sveltekit:prefetch href="/snippets" title={$_('header.snippets')}
 					>{$_('header.snippets')}</a
 				>
 			</li>

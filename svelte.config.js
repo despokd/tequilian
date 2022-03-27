@@ -19,7 +19,10 @@ const config = {
 			scss: true
 		}),
 		mdsvex({
-			extensions: ['.md']
+			extensions: ['.md'],
+			layout: {
+				snippets: 'src/routes/snippets/_snippet.svelte'
+			}
 		})
 	]
 };

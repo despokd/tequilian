@@ -9,5 +9,7 @@
 <div class="content">
 	<h1>{$_('snippets.title')}</h1>
 
+	<a href="/snippets/fix-svg-not-shown-in-firefox-elementor">First post</a>
+
 	<!-- TODO add listing -->
 </div>
