@@ -1,4 +1,4 @@
-# [tequilian](htpps://tequilian.de)
+# [Tequilian](https://tequilian.de)
 
 Personal website for fun and sharing
 
