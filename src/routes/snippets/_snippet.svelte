@@ -3,6 +3,10 @@
 	export let date = 'tba';
 </script>
 
+<svelte:head>
+	<title>{title} - Tequilian</title>
+</svelte:head>
+
 <div class="content">
 	<h1>{title}</h1>
 

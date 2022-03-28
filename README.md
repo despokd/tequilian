@@ -2,7 +2,19 @@
 
 Personal website for fun and sharing
 
-![social preview](https://github.com/despokd/tequilian/blob/main/static/social-preview.png?raw=true)
+![social preview](static/social-preview.png)
+
+## TODO
+
+- [ ] general styling
+- [ ] a11y improvements
+- [ ] blog excerpt
+- [ ] blog meta tags
+- [x] blog titles
+- [ ] blog preview images
+- [ ] link previews
+- [ ] fetch github projects
+- [ ] add target blank and rel noopener to external links to snippets
 
 ## Developing
 
