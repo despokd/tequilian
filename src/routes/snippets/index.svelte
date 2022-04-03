@@ -13,13 +13,12 @@
 
 <script>
 	import { _ } from '$lib/i18n';
+	import Meta from '$lib/components/Meta.svelte';
 
 	export let snippets;
 </script>
 
-<svelte:head>
-	<title>{$_('snippets.title')} - Tequilian</title>
-</svelte:head>
+<Meta title={$_('snippets.title')} />
 
 <div class="content">
 	<h1>{$_('snippets.title')}</h1>

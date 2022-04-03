@@ -1,12 +1,9 @@
 <script context="module">
 	import { _ } from '$lib/i18n';
-
-	export const prerender = true;
+	import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<svelte:head>
-	<title>Tequilian</title>
-</svelte:head>
+<Meta />
 
 <div class="content">
 	<div class="container">

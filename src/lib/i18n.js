@@ -4,6 +4,10 @@ function setupI18n() {
 	dictionary.set({
 		en: {
 			id: 'en',
+			general: {
+				'title': 'Tequilian',
+				'description': 'A simple Svelte app to play with Svelte I18n'
+			},
 			header: {
 				home: 'Home',
 				snippets: 'Snippets',
@@ -29,6 +33,10 @@ function setupI18n() {
 		},
 		de: {
 			id: 'de',
+			general: {
+				'title': 'Tequilian',
+				'description': 'A simple Svelte app to play with Svelte I18n'
+			},
 			header: {
 				home: 'Start',
 				snippets: 'Snippets',
