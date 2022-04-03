@@ -15,10 +15,14 @@
 	import { _ } from '$lib/i18n';
 	import Meta from '$lib/components/Meta.svelte';
 	import Card from '$lib/components/cards/snippet.svelte';
+	import links from './links/data.json';
 
 	export let snippets;
 
-	snippets = snippets.slice(0, 3);
+	snippets = snippets.slice(0, 2);
+	let linksLength = Object.entries(links).length;
+	let linksLatest = links.slice(linksLength - 1, linksLength - 0)[0];
+	let linksFirst = links.slice(0, 1)[0];
 </script>
 
 <Meta />
@@ -44,14 +48,30 @@
 			{/each}
 		</ul>
 	</section>
+	<section class="container links">
+		<h2>{$_('links.title')}</h2>
+
+		<ul>
+			<li>
+				<h3>Always first</h3>
+				<a href={linksFirst.url} target="blank" rel="noreferrer">{linksFirst.url} </a>
+			</li>
+			<li>
+				<h3>Newcomer</h3>
+				<a href={linksLatest.url} target="blank" rel="noreferrer">{linksLatest.url} </a>
+			</li>
+			<li><a href="/links">More usefull pages</a></li>
+		</ul>
+	</section>
 </div>
 
 <style lang="scss">
-	.snippets {
+	.snippets,
+	.links {
 		ul {
 			display: grid;
 			gap: 1rem;
-			grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 			grid-template-rows: masonry;
 			padding: 0;
 			margin: 0;
