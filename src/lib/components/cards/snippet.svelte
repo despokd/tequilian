@@ -1,29 +1,24 @@
 <script>
 	import { _ } from '$lib/i18n';
-	import Meta from '$lib/components/Meta.svelte';
 
 	export let preview = {
 			url: null,
 			alt: null
 		},
 		title = 'TBA',
-		description = '',
+		description = 'TBA',
 		url = 'coming-soon',
 		tags = [],
 		date = 'now';
 </script>
 
-<svelte:head>
-	<Meta {title} {description} />
-</svelte:head>
-
 <div class="card">
-	<a href={url} {title}>
+	<a href={url}>
 		<header>
 			{#if preview.url}
 				<img src={preview.url} alt={preview.alt} />
 			{:else}
-				<img src="/assets/img/preview.png" alt="" />
+				<img src="/social-preview.png" alt="" />
 			{/if}
 		</header>
 		<main>
@@ -40,3 +35,32 @@
 		</footer>
 	</a>
 </div>
+
+<style lang="scss">
+	.card {
+		padding: 1rem;
+	}
+
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	footer {
+		ul {
+			list-style: none;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding-left: 0;
+			font-size: 0.85em;
+		}
+
+		li {
+			padding: 0.25em;
+			&:first-of-type {
+				padding-left: 0;
+			}
+		}
+	}
+</style>

@@ -7,12 +7,14 @@
 <Meta title={$_('links.title')} />
 
 <div class="content">
-	<h1>{$_('links.title')}</h1>
-	<ul>
-		{#each data as link}
-			<li>
-				<a href={link.url} target="blank" rel="noreferrer">{link.url} </a>
-			</li>
-		{/each}
-	</ul>
+	<div class="container">
+		<h1>{$_('links.title')}</h1>
+		<ul>
+			{#each data as link}
+				<li>
+					<a href={link.url} target="blank" rel="noreferrer">{link.url} </a>
+				</li>
+			{/each}
+		</ul>
+	</div>
 </div>

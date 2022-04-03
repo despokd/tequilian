@@ -7,30 +7,31 @@
 <Meta title={$_('comingSoon.title')} />
 
 <div class="content">
-	<div>
-		<h1>{$_('comingSoon.title')}</h1>
-		<p>
-			{@html $_('comingSoon.text')
-				.replace(
-					'{buttonStart}',
-					'<button onclick="window.history.back()" title="Return to latest viewed page">'
-				)
-				.replace('{buttonEnd}', '</button>')}
-		</p>
-	</div>
-	<div class="lottie">
-		<LottiePlayer
-			src="https://assets8.lottiefiles.com/packages/lf20_ffdeo4si.json"
-			background="transparent"
-			controlsLayout={['playpause']}
-			speed=".5"
-		/>
+	<div class="container">
+		<div>
+			<h1>{$_('comingSoon.title')}</h1>
+			<p>
+				{@html $_('comingSoon.text')
+					.replace(
+						'{buttonStart}',
+						'<button onclick="window.history.back()" title="Return to latest viewed page">'
+					)
+					.replace('{buttonEnd}', '</button>')}
+			</p>
+		</div>
+		<div class="lottie">
+			<LottiePlayer
+				src="https://assets8.lottiefiles.com/packages/lf20_ffdeo4si.json"
+				background="transparent"
+				controlsLayout={['playpause']}
+				speed=".5"
+			/>
+		</div>
 	</div>
 </div>
 
 <style lang="scss">
-	.content {
-		display: flex;
+	.container {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
