@@ -6,7 +6,7 @@ function setupI18n() {
 			id: 'en',
 			general: {
 				'title': 'Tequilian',
-				'description': 'A simple Svelte app to play with Svelte I18n'
+				'description': 'When life gives you a lemon ask for salt and Tequilian'
 			},
 			header: {
 				home: 'Home',
@@ -29,13 +29,17 @@ function setupI18n() {
 			},
 			imprint: {
 				title: 'Imprint'
+			},
+			comingSoon: {
+				title: 'Coming soon',
+				text: 'This page is not available yet. Come back later or {buttonStart}go back{buttonEnd}.'
 			}
 		},
 		de: {
 			id: 'de',
 			general: {
 				'title': 'Tequilian',
-				'description': 'A simple Svelte app to play with Svelte I18n'
+				'description': 'Wenn das Leben dir eine Zitrone gibt, frag nach Salz und Tequilian'
 			},
 			header: {
 				home: 'Start',
@@ -58,6 +62,10 @@ function setupI18n() {
 			},
 			imprint: {
 				title: 'Impressum'
+			},
+			comingSoon: {
+				title: 'Coming soon',
+				text: 'Diese Seite ist noch nicht verfügbar. Komm später wieder oder {buttonStart}gehe zurück{buttonEnd}.'
 			}
 		}
 	});
