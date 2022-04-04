@@ -1,0 +1,23 @@
+.link-card {
+    &.Container {
+        color: inherit;
+        border: inherit;
+        border-radius: inherit;
+        background-color: inherit;
+        &:hover {
+            background-color: transparent !important;
+            opacity: .5;
+        }
+    }
+
+    .Image {
+        border-radius: inherit;
+        height: inherit;
+        aspect-ratio: 4/2;
+    }
+
+    .Secondary {
+        color: inherit;
+        opacity: .7;
+    }
+}

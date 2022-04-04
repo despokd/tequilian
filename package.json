@@ -24,7 +24,9 @@
   "type": "module",
   "dependencies": {
     "@lottiefiles/lottie-player": "^1.5.6",
+    "@microlink/vanilla": "^5.5.8",
     "svelte-i18n": "^3.3.13",
-    "svelte-icons": "^2.1.0"
+    "svelte-icons": "^2.1.0",
+    "svelte-link-preview": "^0.3.3"
   }
 }

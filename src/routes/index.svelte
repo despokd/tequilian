@@ -16,6 +16,7 @@
 	import Meta from '$lib/components/Meta.svelte';
 	import Card from '$lib/components/cards/snippet.svelte';
 	import links from './links/data.json';
+	import { LinkPreview } from 'svelte-link-preview';
 
 	export let snippets;
 
@@ -46,6 +47,9 @@
 					/>
 				</li>
 			{/each}
+			<li>
+				<a href="/snippets">More snippets</a>
+			</li>
 		</ul>
 	</section>
 	<section class="container links">
@@ -54,11 +58,11 @@
 		<ul>
 			<li>
 				<h3>Always first</h3>
-				<a href={linksFirst.url} target="blank" rel="noreferrer">{linksFirst.url} </a>
+				<LinkPreview url={linksFirst.url} className="link-card" />
 			</li>
 			<li>
 				<h3>Newcomer</h3>
-				<a href={linksLatest.url} target="blank" rel="noreferrer">{linksLatest.url} </a>
+				<LinkPreview url={linksLatest.url} className="link-card" />
 			</li>
 			<li><a href="/links">More usefull pages</a></li>
 		</ul>
