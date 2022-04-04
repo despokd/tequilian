@@ -14,7 +14,7 @@
 		year: 'numeric'
 	});
 
-	if (tags.length > 0) {
+	if (!preview && tags.length > 0) {
 		preview = '/thumbnails/tags/' + tags[0].toLowerCase().replace(' ', '-') + '.png';
 	}
 </script>
@@ -42,7 +42,7 @@
 	a {
 		text-decoration: none;
 		color: inherit;
-		&:hover {
+		&:hover > * {
 			opacity: 0.5;
 		}
 	}
@@ -55,6 +55,8 @@
 	img {
 		width: 100%;
 		object-fit: cover;
+		background-color: rgb(255, 255, 255, 0.1);
+		aspect-ratio: 16/9;
 	}
 
 	footer {

@@ -7,6 +7,10 @@ html {
 	overscroll-behavior: none;
 }
 
+* {
+	transition: .2s ease-in;
+}
+
 /**
  * Typo
  */
@@ -19,6 +23,7 @@ p {
 .h0,
 #{headings()} {
 	font-family: $font-family-heading;
+	margin-block: 1em;
 }
 
 .h0 {

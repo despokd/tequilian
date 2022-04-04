@@ -10,7 +10,7 @@
 <div class="content">
 	<div class="container">
 		<h1>{$_('links.title')}</h1>
-		<ul>
+		<ul class="grid">
 			{#each data as link}
 				<li title={link.url}>
 					<LinkPreview url={link.url} className="link-card" />
@@ -21,13 +21,4 @@
 </div>
 
 <style lang="scss">
-	ul {
-		display: grid;
-		gap: 2rem;
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-		grid-template-rows: masonry;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
 </style>

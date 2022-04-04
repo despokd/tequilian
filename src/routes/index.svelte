@@ -35,7 +35,7 @@
 	<section class="container snippets">
 		<h2>{$_('snippets.title')}</h2>
 
-		<ul>
+		<ul class="grid">
 			{#each snippets as snippet}
 				<li>
 					<Card
@@ -54,7 +54,7 @@
 	<section class="container links">
 		<h2>{$_('links.title')}</h2>
 
-		<ul>
+		<ul class="grid">
 			<li>
 				<h3>Always first</h3>
 				<LinkPreview url={linksFirst.url} className="link-card" />
@@ -69,16 +69,4 @@
 </div>
 
 <style lang="scss">
-	.snippets,
-	.links {
-		ul {
-			display: grid;
-			gap: 2rem;
-			grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-			grid-template-rows: masonry;
-			padding: 0;
-			margin: 0;
-			list-style: none;
-		}
-	}
 </style>
