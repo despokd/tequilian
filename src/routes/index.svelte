@@ -40,7 +40,6 @@
 				<li>
 					<Card
 						title={snippet.meta.title}
-						description={snippet.meta.description}
 						url={snippet.path}
 						tags={snippet.meta.tags}
 						date={snippet.meta.date}
