@@ -7,6 +7,8 @@
 	<a href="//kdomaratius.de" rel="noreferrer" target="_blank" title={$_('footer.aboutMe')}
 		>Kilian Domaratius</a
 	>
+	- This site on
+	<a href="https://github.com/despokd/tequilian.de" rel="noreferrer" target="_blank">GitHub</a>
 </footer>
 
 <style lang="scss">
