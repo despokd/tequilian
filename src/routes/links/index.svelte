@@ -12,7 +12,7 @@
 		<h1>{$_('links.title')}</h1>
 		<ul>
 			{#each data as link}
-				<li>
+				<li title={link.url}>
 					<LinkPreview url={link.url} className="link-card" />
 				</li>
 			{/each}
@@ -23,7 +23,7 @@
 <style lang="scss">
 	ul {
 		display: grid;
-		gap: 1rem;
+		gap: 2rem;
 		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 		grid-template-rows: masonry;
 		padding: 0;

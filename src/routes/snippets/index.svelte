@@ -44,7 +44,7 @@
 <style lang="scss">
 	ul {
 		display: grid;
-		gap: 1rem;
+		gap: 2rem;
 		grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 		grid-template-rows: masonry;
 		padding: 0;
