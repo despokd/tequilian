@@ -1,33 +1,35 @@
 <script>
 	import { _ } from '$lib/i18n';
 
-	export let preview = {
-			url: null,
-			alt: null
-		},
+	export let preview = null,
 		title = 'TBA',
-		description = 'TBA',
 		url = 'coming-soon',
 		tags = [],
 		date = 'now';
+
+	date = new Date(date);
+	let dateFormatted = date.toLocaleDateString($_('id'), {
+		month: 'long',
+		day: 'numeric',
+		year: 'numeric'
+	});
+
+	if (!preview && tags.length > 0) {
+		preview = '/thumbnails/tags/' + tags[0].toLowerCase().replace(' ', '-') + '.png';
+	}
 </script>
 
 <div class="card">
 	<a href={url}>
 		<header>
-			{#if preview.url}
-				<img src={preview.url} alt={preview.alt} />
-			{:else}
-				<img src="/social-preview.png" alt="" />
-			{/if}
+			<img src={preview ? preview : '/social-preview.png'} alt="" />
 		</header>
 		<main>
-			<h2>{title}</h2>
-			<p>{description}</p>
+			<h3>{title}</h3>
 		</main>
 		<footer>
 			<ul>
-				<li><time datetime={new Date(date)}>{new Date(date)}</time></li>
+				<li><time datetime={date}>{dateFormatted}</time></li>
 				{#each tags as tag}
 					<li>{tag}</li>
 				{/each}
@@ -37,16 +39,28 @@
 </div>
 
 <style lang="scss">
-	.card {
-		padding: 1rem;
+	a {
+		text-decoration: none;
+		color: inherit;
+		&:hover > * {
+			opacity: 0.5;
+		}
+	}
+
+	footer,
+	main {
+		padding-inline: 0.5rem;
 	}
 
 	img {
 		width: 100%;
 		object-fit: cover;
+		background-color: rgb(255, 255, 255, 0.1);
+		aspect-ratio: 16/9;
 	}
 
 	footer {
+		padding-bottom: 0.5rem;
 		ul {
 			list-style: none;
 			display: flex;

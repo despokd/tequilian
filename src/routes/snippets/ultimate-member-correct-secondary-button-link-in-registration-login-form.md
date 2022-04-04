@@ -1,7 +1,7 @@
 ---
 title: 'Ultimate Member Correct Secondary Button Link in Registration Login Form'
 date: 2020-05-13
-tags: ['Ultimate Member', 'WordPress', 'PHP', 'JavaScript', 'jQuery']
+tags: ['WordPress', 'Ultimate Member', 'PHP', 'JavaScript', 'jQuery']
 ---
 
 ```HTML

@@ -3,16 +3,32 @@
 	import Meta from '$lib/components/Meta.svelte';
 
 	export let title = 'Snippet';
-	export let date = 'tba';
+	export let date = 'now';
+	export let tags = [];
+	export let preview;
+
+	date = new Date(date);
+	let dateFormatted = date.toLocaleDateString($_('id'), {
+		month: 'long',
+		day: 'numeric',
+		year: 'numeric'
+	});
+
+	if (!preview && tags.length > 0) {
+		preview = '/thumbnails/tags/' + tags[0].toLowerCase().replace(' ', '-') + '.png';
+	}
 </script>
 
 <Meta {title} />
 
 <div class="content">
-	<div class="container">
-		<h1>{title}</h1>
+	<div class="container container-small">
+		{#if preview}
+			<img src={preview} alt="" />
+		{/if}
 
-		<p>Published: {date}</p>
+		<h1>{title}</h1>
+		<time datetime={date}>{dateFormatted}</time>
 
 		<slot />
 	</div>

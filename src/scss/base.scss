@@ -7,6 +7,10 @@ html {
 	overscroll-behavior: none;
 }
 
+* {
+	transition: 0.2s ease-in;
+}
+
 /**
  * Typo
  */
@@ -19,6 +23,7 @@ p {
 .h0,
 #{headings()} {
 	font-family: $font-family-heading;
+	width: 100%;
 }
 
 .h0 {
@@ -53,4 +58,41 @@ h5,
 h6,
 .h6 {
 	font-size: 1.125rem;
+}
+
+/**
+ * Media
+ */
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+/**
+ * Scroll bar
+ */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	@media (prefers-color-scheme: dark) {
+		scrollbar-color: rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1);
+	}
+}
+
+*::-webkit-scrollbar {
+	width: 0.85rem;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.1);
+	@media (prefers-color-scheme: dark) {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.2);
+		@media (prefers-color-scheme: dark) {
+			background-color: rgba(255, 255, 255, 0.2);
+		}
+	}
 }

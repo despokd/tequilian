@@ -1,7 +1,7 @@
 ---
 title: 'Show Classic ASP Version'
 date: 2019-10-14
-tags: ['Classic ASP']
+tags: ['ASP', 'Classic ASP']
 ---
 
 ```VB
