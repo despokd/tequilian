@@ -22,7 +22,7 @@
 <Meta {title} />
 
 <div class="content">
-	<div class="container">
+	<div class="container container-small">
 		{#if preview}
 			<img src={preview} alt="" />
 		{/if}

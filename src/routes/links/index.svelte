@@ -8,7 +8,7 @@
 <Meta title={$_('links.title')} />
 
 <div class="content">
-	<div class="container">
+	<div class="container container-fluid">
 		<h1>{$_('links.title')}</h1>
 		<ul class="grid">
 			{#each data as link}

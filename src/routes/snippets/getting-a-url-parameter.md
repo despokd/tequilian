@@ -18,7 +18,7 @@ Let’s say you have the following URL:`http://example.com/?product=shirt&color=
 
 Here’s a function to give you all the URL parameters as a neat object:
 
-```JavaScript
+```js
 function getAllUrlParams(url) {
 
   // get query string from url (optional) or window

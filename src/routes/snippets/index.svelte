@@ -22,7 +22,7 @@
 <Meta title={$_('snippets.title')} />
 
 <div class="content">
-	<div class="container">
+	<div class="container container-fluid">
 		<h1>{$_('snippets.title')}</h1>
 
 		<ul class="grid">
