@@ -1,5 +1,9 @@
 [
     {
+        "url": "https://designtoasty.de/",
+        "favorite": true
+    },
+    {
         "url": "https://unsplash.com",
         "category": "image"
     },
@@ -81,11 +85,47 @@
         "category": "tools"
     },
     {
-        "url": "https://designtoasty.de/",
+        "url": "https://patrikphan.de/",
         "favorite": true
     },
     {
-        "url": "https://patrikphan.de/",
-        "favorite": true
+        "url": "https://jex.im/regulex/#!flags=&re=%5E(%3F%3Ahttp(%3F%3As)%3F%3A%5C%2F%5C%2F)%3F(%3F%3Awww%5C.)%3F(%3F%3Am%5C.)%3F(%3F%3Ayoutu%5C.be%5C%2F%7Cyoutube%5C.com%5C%2F(%3F%3A(%3F%3Awatch)%3F%5C%3F(%3F%3A.*%26)%3Fv(%3F%3Ai)%3F%3D%7C(%3F%3Aembed%7Cv%7Cvi%7Cuser%7Cshorts)%5C%2F))(%5B%5E%5C%3F%26%5C%22'%3E%5D%2B)",
+        "category": "tools"
+    },
+    {
+        "url": "https://lifeat.io/room/crqw9ZEIp5yXuF1O?host=Kilian%27s+Room&space=421",
+        "category": "tools"
+    },
+    {
+        "url": "https://httpstatus.io/",
+        "category": "tools"
+    },
+    {
+        "url": "https://globalsign.ssllabs.com/analyze.html",
+        "category": "tools"
+    },
+    {
+        "url": "https://onlinepngtools.com/create-transparent-png",
+        "category": "tools"
+    },
+    {
+        "url": "https://muellmail.com/",
+        "category": "tools"
+    },
+    {
+        "url": "https://test-ipv4.com/",
+        "category": "tools"
+    },
+    {
+        "url": "https://croppola.com/",
+        "category": "tools"
+    },
+    {
+        "url": "https://webcamtests.com/",
+        "category": "tools"
+    },
+    {
+        "url": "https://www.befunky.com/create/blur-image/",
+        "category": "tools"
     }
 ]

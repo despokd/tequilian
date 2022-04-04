@@ -1,7 +1,7 @@
 ---
 title: 'Update AIO Seo titles after Update from 3.x to 4.x'
-date: 2022-04-1
-tags: ['WordPress', 'SQL']
+date: 2022-04-01
+tags: ['WordPress', 'SQL', 'SEO']
 ---
 
 ## SQL Query
