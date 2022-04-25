@@ -5,7 +5,9 @@
     },
     {
         "url": "https://unsplash.com",
-        "category": "image"
+        "category": "
+        
+        "
     },
     {
         "url": "https://www.pexels.com",
@@ -126,6 +128,10 @@
     },
     {
         "url": "https://www.befunky.com/create/blur-image/",
-        "category": "tools"
+        "category": "image"
+    },
+    {
+        "url": "https://placeholder.com/",
+        "category": "image"
     }
 ]
