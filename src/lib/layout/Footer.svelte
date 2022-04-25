@@ -8,7 +8,7 @@
 		>Kilian Domaratius</a
 	>
 	- This site on
-	<a href="https://github.com/despokd/tequilian.de" rel="noreferrer" target="_blank">GitHub</a>
+	<a href="https://github.com/despokd/tequilian" rel="noreferrer" target="_blank">GitHub</a>
 </footer>
 
 <style lang="scss">
