@@ -1,6 +1,10 @@
 /**
  * Global
  */
+:root {
+	color-scheme: dark light;
+}
+
 html {
 	scroll-behavior: smooth;
 	scroll-margin-top: 20vh;
@@ -67,32 +71,4 @@ h6,
 img {
 	width: 100%;
 	object-fit: cover;
-}
-
-/**
- * Scroll bar
- */
-* {
-	scrollbar-width: thin;
-	scrollbar-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
-	@media (prefers-color-scheme: dark) {
-		scrollbar-color: rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1);
-	}
-}
-
-*::-webkit-scrollbar {
-	width: 0.85rem;
-}
-
-*::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.1);
-	@media (prefers-color-scheme: dark) {
-		background-color: rgba(255, 255, 255, 0.1);
-	}
-	&:hover {
-		background-color: rgba(0, 0, 0, 0.2);
-		@media (prefers-color-scheme: dark) {
-			background-color: rgba(255, 255, 255, 0.2);
-		}
-	}
 }
