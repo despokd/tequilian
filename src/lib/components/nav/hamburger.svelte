@@ -8,7 +8,7 @@
 </script>
 
 <div class="hamburger-button">
-	<input type="checkbox" id="toggle-menu" class="toggle-menu" on:change={toggleMainNav} selected />
+	<input type="checkbox" id="toggle-menu" class="toggle-menu" on:change={toggleMainNav} />
 	<label for="toggle-menu" class="toggle-handle hamburger hamburger--spring">
 		<span class="hamburger-box">
 			<span class="hamburger-inner" />
