@@ -4,6 +4,11 @@
 
 $transition: 0.3s ease-in-out;
 
+/* z levels */
+$level-1: 10; // specific elements
+$level-2: 20; // elements that are positioned (e.g. header)
+$level-3: 30; // overlay all elements
+
 /* Fonts */
 // TODO add fonts
 $font-family-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
