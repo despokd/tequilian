@@ -39,6 +39,8 @@
 </div>
 
 <style lang="scss">
+	@import '../../../scss/abstract.scss';
+
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -55,7 +57,7 @@
 	img {
 		width: 100%;
 		object-fit: cover;
-		background-color: rgb(255, 255, 255, 0.1);
+		background-color: color('background-alt');
 		aspect-ratio: 16/9;
 	}
 

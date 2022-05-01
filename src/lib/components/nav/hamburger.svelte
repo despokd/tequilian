@@ -8,7 +8,7 @@
 </script>
 
 <div class="hamburger-button">
-	<input type="checkbox" id="toggle-menu" class="toggle-menu" on:change={toggleMainNav} />
+	<input type="checkbox" id="toggle-menu" class="toggle-menu" on:change={toggleMainNav} selected />
 	<label for="toggle-menu" class="toggle-handle hamburger hamburger--spring">
 		<span class="hamburger-box">
 			<span class="hamburger-inner" />
@@ -17,12 +17,16 @@
 </div>
 
 <style lang="scss">
-	// TODO theme colors (font)
-	$color: black;
+	@import '../../../scss/abstract.scss';
+	$color: color('text');
 
 	.hamburger-button {
 		@media (min-width: 50rem) {
 			display: none;
+		}
+
+		&:hover {
+			opacity: 0.85;
 		}
 	}
 

@@ -1,61 +1,66 @@
 .link-card {
-    &.Container {
-        color: inherit;
-        border: inherit;
-        border-radius: inherit;
-        background-color: inherit;
-        &:hover {
-            background-color: transparent !important;
-            opacity: .5;
-        }
-    }
+	&.Container {
+		color: inherit;
+		border: inherit;
+		border-radius: inherit;
+		background-color: inherit;
+		&:hover {
+			background-color: transparent !important;
+			opacity: 0.5;
+		}
+	}
 
-    &:empty {
-        height: 100%;
-        max-height: 450px;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-name: placeHolderShimmer;
-        animation-timing-function: linear;
-        background-color: rgb(255, 255, 255, .1);
-        background: linear-gradient(to right, rgb(255, 255, 255, .1) 8%, rgb(255, 255, 255, .15) 18%, rgb(255, 255, 255, .1) 33%);
-        background-size: 60vw 10vw;
-        position: relative;
-    }
+	&:empty {
+		height: 100%;
+		max-height: 450px;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-name: placeHolderShimmer;
+		animation-timing-function: linear;
+		background-color: color('background-alt');
+		background: linear-gradient(
+			to right,
+			color('background') 8%,
+			color('background-alt') 18%,
+			color('background') 33%
+		);
+		background-size: 60vw 10vw;
+		position: relative;
+	}
 
-    .Image {
-        background-color: rgb(255, 255, 255, .1);
-        border-radius: inherit;
-        height: inherit;
-        aspect-ratio: 16/9;
+	.Image {
+		background-color: color('background-alt');
+		border-radius: inherit;
+		height: inherit;
+		aspect-ratio: 16/9;
 
-        @media (prefers-color-scheme: dark) {
-            &[style*="UeDNBNQ.jpeg"] {
-                filter: invert(.875);
-            }
-        }
-    }
+		@media (prefers-color-scheme: dark) {
+			&[style*='UeDNBNQ.jpeg'] {
+				filter: invert(0.875);
+			}
+		}
+	}
 
-    .Title {
-        margin-block: 1em;
-    }
+	.Title {
+		margin-block: 1em;
+	}
 
-    .LowerContainer {
-        padding: .5rem;
-    }
+	.LowerContainer {
+		padding: 0.5rem;
+	}
 
-    .Secondary {
-        color: inherit;
-        opacity: .7;
-    }
+	.Secondary {
+		color: inherit;
+		opacity: 0.7;
+	}
 }
 
 @keyframes placeHolderShimmer {
-    0% {
-      background-position: -60vw 0
-    }
-    100% {
-      background-position: 60vw 0
-    }
-  }
+	0% {
+		background-position: -60vw 0;
+	}
+	100% {
+		background-position: 60vw 0;
+	}
+}

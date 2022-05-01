@@ -2,7 +2,7 @@
  * Global
  */
 :root {
-	color-scheme: dark light;
+	//color-scheme: dark light;
 	@include define-color('primary', #d30082);
 	@include define-color('secondary', #3700ff);
 	@include define-color('tertiary', #00d3ff);
@@ -30,6 +30,29 @@ html {
 	scroll-behavior: smooth;
 	scroll-margin-top: 20vh;
 	overscroll-behavior: none;
+}
+
+/**
+ * Colors
+ */
+
+body {
+	color: color('text');
+	background-color: color('background');
+}
+
+a,
+.a {
+	color: color('primary');
+	text-decoration: none;
+	transition: $transition;
+
+	&:hover {
+		color: color('secondary');
+	}
+	&:focus-visible {
+		outline: none;
+	}
 }
 
 /**
@@ -88,4 +111,19 @@ h6,
 img {
 	width: 100%;
 	object-fit: cover;
+}
+
+img,
+.Image,
+picture,
+video,
+audio,
+canvas,
+svg,
+iframe,
+embed,
+object {
+	@media (prefers-color-scheme: dark) {
+		opacity: 0.85;
+	}
 }
