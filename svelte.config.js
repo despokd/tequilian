@@ -10,7 +10,14 @@ const config = {
 		// Override http methods in the Todo forms
 		methodOverride: {
 			allowed: ['PATCH', 'DELETE']
-		}
+		},
+
+		// allow use of vercel/node env variables
+		vite: {
+			define: {
+				'process.env': process.env,
+			},
+		},
 	},
 
 	extensions: ['.svelte', '.md'],
