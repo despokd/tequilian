@@ -35,4 +35,13 @@
 </div>
 
 <style lang="scss">
+	@import '../../scss/abstract.scss';
+	@import '../../scss/variables.scss';
+
+	img {
+		width: 100%;
+		object-fit: cover;
+		background-color: color('background-alt');
+		aspect-ratio: 16/9;
+	}
 </style>
