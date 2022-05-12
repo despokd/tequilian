@@ -45,7 +45,7 @@
 	}
 
 	.hamburger {
-		padding: 9px 1.5rem;
+		padding-inline: 1rem;
 		cursor: pointer;
 		transition: opacity, filter 150ms linear;
 		text-transform: none;
