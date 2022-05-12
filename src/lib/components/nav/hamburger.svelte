@@ -18,6 +18,7 @@
 
 <style lang="scss">
 	@import '../../../scss/abstract.scss';
+
 	$color: color('text');
 
 	.hamburger-button {

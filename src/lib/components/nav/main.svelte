@@ -43,10 +43,10 @@
 </div>
 
 <style lang="scss">
-	nav {
-		position: relative;
-		overflow: hidden;
+	@import '../../../scss/variables.scss';
+	@import '../../../scss/abstract.scss';
 
+	nav {
 		ul {
 			list-style: none;
 			display: flex;
@@ -68,8 +68,14 @@
 			position: absolute;
 			top: 100%;
 			right: 0;
+			width: 80vw;
+			max-width: 17rem;
+			min-height: 100vh;
+			padding: 1rem;
 			transform: translateX(100%);
-			transition: transform 0.3s ease;
+			transition: 0.3s ease;
+			background-color: color('background');
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
 			&.show {
 				transform: translateX(0%);
